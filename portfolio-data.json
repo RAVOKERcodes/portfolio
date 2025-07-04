@@ -21,7 +21,15 @@
       "createdAt": "2025-07-04T07:28:21.270Z"
     }
   ],
-  "skills": [],
+  "skills": [
+    {
+      "name": "furgi",
+      "level": 90,
+      "category": "backend",
+      "icon": "",
+      "id": "1751614153685"
+    }
+  ],
   "experience": [],
   "contact": {
     "email": "trainer@pokemon.dev",
