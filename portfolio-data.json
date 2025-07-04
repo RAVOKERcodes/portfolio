@@ -5,7 +5,22 @@
     "bio": "Welcome to my digital world! I'm a developer who catches bugs instead of Pokemon.",
     "tagline": "Gotta Code 'Em All!"
   },
-  "projects": [],
+  "projects": [
+    {
+      "title": "test",
+      "description": "test",
+      "longDescription": "test",
+      "tags": [],
+      "imageUrl": "https://raw.githubusercontent.com/ravokercodes/portfolio/main/assets/project-1751614101270-1751614130827.jpg",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/RAVOKERcodes/portfolio",
+      "featured": true,
+      "type": "web",
+      "status": "in-progress",
+      "id": "1751614101270",
+      "createdAt": "2025-07-04T07:28:21.270Z"
+    }
+  ],
   "skills": [],
   "experience": [],
   "contact": {
