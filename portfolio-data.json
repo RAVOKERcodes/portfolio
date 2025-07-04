@@ -1,0 +1,20 @@
+{
+  "personal": {
+    "name": "Your Name",
+    "title": "Pokemon Trainer & Developer",
+    "bio": "Welcome to my digital world! I'm a developer who catches bugs instead of Pokemon.",
+    "tagline": "Gotta Code 'Em All!"
+  },
+  "projects": [],
+  "skills": [],
+  "experience": [],
+  "contact": {
+    "email": "trainer@pokemon.dev",
+    "location": "Pallet Town"
+  },
+  "settings": {
+    "theme": "pokemon",
+    "showEmail": true,
+    "showPhone": false
+  }
+}
