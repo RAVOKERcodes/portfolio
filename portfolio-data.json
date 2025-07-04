@@ -1,6 +1,6 @@
 {
   "personal": {
-    "name": "Your Name",
+    "name": "Dhruv Shridhar",
     "title": "Pokemon Trainer & Developer",
     "bio": "Welcome to my digital world! I'm a developer who catches bugs instead of Pokemon.",
     "tagline": "Gotta Code 'Em All!"
@@ -33,11 +33,14 @@
   "experience": [],
   "contact": {
     "email": "trainer@pokemon.dev",
-    "location": "Pallet Town"
+    "location": "Pallet Town",
+    "phone": "7560057110"
   },
   "settings": {
     "theme": "pokemon",
     "showEmail": true,
-    "showPhone": false
+    "showPhone": true,
+    "githubUsername": "RAVOKERcodes",
+    "repoName": "https://github.com/RAVOKERcodes/portfolio"
   }
 }
