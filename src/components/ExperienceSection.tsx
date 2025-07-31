@@ -12,40 +12,39 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    company: "Tech Innovations Inc.",
-    position: "Senior Full Stack Developer",
-    duration: "2022 - Present",
-    location: "San Francisco, CA",
+    company: "Prismberry Technologies",
+    position: "Software Developer",
+    duration: "October 2024 - Present",
+    location: "Noida, Uttar Pradesh",
     description: [
-      "Led development of microservices architecture serving 100k+ daily users",
-      "Implemented CI/CD pipelines reducing deployment time by 60%",
-      "Mentored junior developers and conducted code reviews"
+      "Worked on various Node.js and Python projects like Order Management System, Performance Management System and AI Healthcare.",
+      "Worked with AI LLM, AI Agents and Salesforce applications and integration.",
+      "Worked on custom plugins and real-time-live projects."
     ],
-    technologies: ["React", "Node.js", "PostgreSQL", "AWS", "Docker"]
+    technologies: ["Node.js", "Express.js", "Python", "PostgreSQL", "AWS", "Docker", "Salesforce", "React", "TypeScript"]
   },
   {
-    company: "Digital Solutions Co.",
-    position: "Frontend Developer",
-    duration: "2020 - 2022",
+    company: "Snoodify Hive",
+    position: "CMS Developer",
+    duration: "April 2024 – August 2024",
     location: "Remote",
     description: [
-      "Built responsive web applications using modern JavaScript frameworks",
-      "Collaborated with UX designers to implement pixel-perfect designs",
-      "Optimized application performance resulting in 40% faster load times"
+      "Built custom CMS and plugins for various e-commerce projects.",
+      "Hands-on experience with various CMS platforms(WordPress, Joomla, Shopify).",
+      "Worked on various e-commerce projects like Nautankishaala, samishaorganic, villagecompanystore."
     ],
-    technologies: ["React", "TypeScript", "Sass", "Redux", "Jest"]
+    technologies: ["PHP", "MySQL", "JavaScript", "jQuery", "CSS", "HTML", "Bootstrap", "Wordpress", "Joomla", "Shopify", "Java Advance"]
   },
   {
-    company: "StartupXYZ",
-    position: "Junior Developer",
-    duration: "2019 - 2020",
-    location: "New York, NY",
+    company: "Insto Health Care",
+    position: "Web Developer",
+    duration: "July 2022 – December 2022",
+    location: "Jalandhar, Punjab",
     description: [
-      "Developed and maintained company's main product dashboard",
-      "Participated in agile development cycles and daily standups",
-      "Contributed to open-source projects and internal tooling"
+      "Developed there e-commerce website.",
+      "www.instohealthcare.com"
     ],
-    technologies: ["JavaScript", "Vue.js", "MongoDB", "Express.js"]
+    technologies: ["JavaScript", "Vue.js", "MongoDB", "Express.js", "React", "Node.js"]
   }
 ];
 

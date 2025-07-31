@@ -153,7 +153,7 @@ export const ProjectsSection = () => {
                     onClick={() => window.open(project.liveUrl, '_blank')}
                   >
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
+                    View
                   </Button>
                 </div>
               </CardContent>

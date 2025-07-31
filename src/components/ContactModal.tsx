@@ -17,29 +17,29 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
     {
       icon: Mail,
       label: "Email",
-      value: "john.doe@email.com",
-      action: () => window.location.href = 'mailto:john.doe@email.com',
+      value: "shridhardhruv123@gmail.com",
+      action: () => window.location.href = 'mailto:shridhardhruv123@gmail.com',
       actionLabel: "Send Email"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+91 7560057110",
       action: () => window.location.href = 'tel:+15551234567',
       actionLabel: "Call Now"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/johndoe",
-      action: () => window.open('https://linkedin.com/in/johndoe', '_blank'),
+      value: "linkedin.com/in/dhruv-shridhar",
+      action: () => window.open('https://linkedin.com/in/dhruv-shridhar', '_blank'),
       actionLabel: "View Profile"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/johndoe",
-      action: () => window.open('https://github.com/johndoe', '_blank'),
+      value: "github.com/RAVOKERcodes",
+      action: () => window.open('https://github.com/RAVOKERcodes', '_blank'),
       actionLabel: "View Profile"
     },
     {

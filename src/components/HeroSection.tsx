@@ -30,11 +30,12 @@ export const HeroSection = () => {
                 Dhruv Shridhar
               </h1>
               <h2 className="text-xl lg:text-2xl text-primary font-medium">
-                Full Stack Developer & UI/UX Designer
+                Software Engineer
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-                Passionate about creating innovative solutions that bridge the gap between 
-                design and technology. Specialized in React, Node.js, and modern web technologies.
+              A highly motivated individual with strong interpersonal skills in Computer Applications. Skilled in
+implementing each step of a project with precision. Eager to learn new technologies and methodologies,
+with a passion for innovation to enhance existing technology.
               </p>
             </div>
 
@@ -44,7 +45,7 @@ export const HeroSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="bg-card/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground hover-lift border-primary/20"
-                onClick={() => window.open('https://linkedin.com', '_blank')}
+                onClick={() => window.open('https://linkedin.com/in/dhruv-shridhar', '_blank')}
               >
                 <Linkedin className="w-5 h-5 mr-2" />
                 LinkedIn
@@ -53,7 +54,7 @@ export const HeroSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="bg-card/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground hover-lift border-primary/20"
-                onClick={() => window.open('https://github.com', '_blank')}
+                onClick={() => window.open('https://github.com/RAVOKERcodes', '_blank')}
               >
                 <Github className="w-5 h-5 mr-2" />
                 GitHub
@@ -62,7 +63,7 @@ export const HeroSection = () => {
                 variant="outline" 
                 size="lg" 
                 className="bg-card/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground hover-lift border-primary/20"
-                onClick={() => window.location.href = 'mailto:john.doe@email.com'}
+                onClick={() => window.open('mailto:shridhardhruv123@gmail.com', '_blank')}
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email
