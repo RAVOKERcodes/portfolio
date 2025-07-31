@@ -57,14 +57,14 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-lg bg-gradient-card border-primary/20 animate-scale-in">
+      <DialogContent className="sm:w-lg bg-gradient-card border-primary/20 animate-scale-in flex flex-col items-center">
         <DialogHeader className="text-center">
           <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             Get In Touch
           </DialogTitle>
         </DialogHeader>
-        
-        <div className="space-y-6 mt-6">
+
+        <div className="space-y-6 mt-6 flex flex-col items-center">
           <p className="text-muted-foreground text-center">
             Feel free to reach out for collaborations, opportunities, or just to say hello!
           </p>
@@ -111,9 +111,9 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
           </div>
           
           <div className="text-center pt-4 border-t border-primary/10">
-            <p className="text-sm text-muted-foreground mb-4">
+            {/* <p className="text-sm text-muted-foreground mb-4">
               Available for freelance work and full-time opportunities
-            </p>
+            </p> */}
             <div className="flex gap-3 justify-center">
               <span className="px-3 py-1 bg-green-500/10 text-green-400 text-sm rounded-full border border-green-500/20">
                 Available for hire
