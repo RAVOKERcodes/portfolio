@@ -16,7 +16,7 @@ interface Project {
 const projects: Project[] = [
   {
     title: "E-Commerce Platform",
-    description: "A modern e-commerce platform built with React and Node.js, featuring real-time inventory management, payment processing, and admin dashboard.",
+    description: "• Modern e-commerce platform with React and Node.js\n• Real-time inventory management system\n• Integrated payment processing with Stripe\n• Comprehensive admin dashboard\n• AWS cloud deployment",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
     technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
     githubUrl: "https://github.com/johndoe/ecommerce-platform",
@@ -26,7 +26,7 @@ const projects: Project[] = [
   },
   {
     title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    description: "• Collaborative task management with real-time updates\n• Drag-and-drop functionality for task organization\n• Team collaboration and communication features\n• Progress tracking and analytics",
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
     technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
     githubUrl: "https://github.com/johndoe/task-manager",
@@ -35,7 +35,7 @@ const projects: Project[] = [
   },
   {
     title: "Weather Dashboard",
-    description: "A responsive weather dashboard with location-based forecasts, interactive charts, and weather alerts using modern APIs.",
+    description: "• Responsive weather dashboard with location-based forecasts\n• Interactive charts and data visualization\n• Weather alerts and notifications\n• Modern API integration",
     image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&h=400&fit=crop",
     technologies: ["Vue.js", "Chart.js", "OpenWeather API", "CSS3"],
     githubUrl: "https://github.com/johndoe/weather-dashboard",
@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     title: "Portfolio Website",
-    description: "A modern, responsive portfolio website built with React and TypeScript, featuring smooth animations and dark theme.",
+    description: "• Modern, responsive portfolio design\n• Built with React and TypeScript\n• Smooth animations and transitions\n• Dark theme implementation",
     image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/johndoe/portfolio",
@@ -53,7 +53,7 @@ const projects: Project[] = [
   },
   {
     title: "AI Chat Bot",
-    description: "An intelligent chatbot with natural language processing capabilities, built using machine learning and modern web technologies.",
+    description: "• Intelligent chatbot with NLP capabilities\n• Machine learning and modern web technologies\n• Real-time WebSocket communication\n• Advanced conversation handling",
     image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=600&h=400&fit=crop",
     technologies: ["Python", "TensorFlow", "Flask", "React", "WebSocket"],
     githubUrl: "https://github.com/johndoe/ai-chatbot",
@@ -63,7 +63,7 @@ const projects: Project[] = [
   },
   {
     title: "Blockchain Tracker",
-    description: "A cryptocurrency tracking application with real-time price updates, portfolio management, and market analysis tools.",
+    description: "• Cryptocurrency tracking with real-time price updates\n• Portfolio management and analytics\n• Market analysis and trend visualization\n• Web3 integration and blockchain data",
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop",
     technologies: ["React", "Redux", "Web3.js", "Node.js", "MongoDB"],
     githubUrl: "https://github.com/johndoe/blockchain-tracker",
@@ -89,9 +89,10 @@ export const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card 
               key={index}
-              className={`group bg-gradient-card border-primary/20 hover-lift hover-glow overflow-hidden ${
+              className={`group bg-gradient-card border-primary/20 hover-lift hover-glow overflow-hidden transition-all duration-500 hover:scale-[1.02] ${
                 project.featured ? 'md:col-span-2 lg:col-span-1' : ''
               }`}
+              style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden">
                 <img
@@ -122,9 +123,11 @@ export const ProjectsSection = () => {
                   )}
                 </div>
 
-                <p className="text-muted-foreground mb-4 line-clamp-3">
-                  {project.description}
-                </p>
+                <div className="text-muted-foreground mb-4 text-sm space-y-1">
+                  {project.description.split('\n').map((point, idx) => (
+                    <div key={idx} className="leading-relaxed">{point}</div>
+                  ))}
+                </div>
 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (

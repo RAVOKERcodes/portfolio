@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Phone, Linkedin, Github, MapPin, Copy, Check } from "lucide-react";
+import { Mail, Phone, Linkedin, Github, Copy, Check } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
@@ -25,7 +25,7 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
       icon: Phone,
       label: "Phone",
       value: "+91 7560057110",
-      action: () => window.location.href = 'tel:+15551234567',
+      action: () => window.location.href = 'tel:+917560057110',
       actionLabel: "Call Now"
     },
     {
@@ -41,13 +41,6 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
       value: "github.com/RAVOKERcodes",
       action: () => window.open('https://github.com/RAVOKERcodes', '_blank'),
       actionLabel: "View Profile"
-    },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "San Francisco, CA",
-      action: () => window.open('https://maps.google.com/?q=San Francisco, CA', '_blank'),
-      actionLabel: "View Map"
     }
   ];
 
@@ -64,15 +57,15 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md bg-gradient-card border-primary/20">
-        <DialogHeader>
+      <DialogContent className="sm:max-w-lg bg-gradient-card border-primary/20 animate-scale-in">
+        <DialogHeader className="text-center">
           <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             Get In Touch
           </DialogTitle>
         </DialogHeader>
         
         <div className="space-y-6 mt-6">
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-center">
             Feel free to reach out for collaborations, opportunities, or just to say hello!
           </p>
           
