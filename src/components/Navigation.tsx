@@ -47,7 +47,7 @@ export const Navigation = ({ onContactClick }: NavigationProps) => {
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <div className="text-2xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-              John Doe
+              Dhruv Shridhar
             </div>
 
             {/* Desktop Navigation */}

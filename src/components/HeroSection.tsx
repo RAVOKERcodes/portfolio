@@ -27,7 +27,7 @@ export const HeroSection = () => {
           <div className="flex-1 text-center lg:text-left space-y-8">
             <div className="space-y-4 animate-slide-up">
               <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent leading-tight">
-                John Doe
+                Dhruv Shridhar
               </h1>
               <h2 className="text-xl lg:text-2xl text-primary font-medium">
                 Full Stack Developer & UI/UX Designer

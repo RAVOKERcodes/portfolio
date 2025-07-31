@@ -21,7 +21,7 @@ const publications: Publication[] = [
     date: "December 2023",
     type: "Research Paper",
     description: "An in-depth analysis of modern web development patterns, focusing on the integration of React and TypeScript for building scalable applications.",
-    authors: ["John Doe", "Jane Smith", "Prof. Michael Johnson"],
+    authors: ["Dhruv Shridhar", "Jane Smith", "Prof. Michael Johnson"],
     url: "https://example-journal.com/paper-1",
     pdfUrl: "https://example.com/paper-1.pdf",
     featured: true
@@ -32,7 +32,7 @@ const publications: Publication[] = [
     date: "September 2023",
     type: "Conference Paper",
     description: "Exploring the intersection of machine learning and web development, with practical implementations and case studies.",
-    authors: ["John Doe", "Dr. Sarah Wilson"],
+    authors: ["Dhruv Shridhar", "Dr. Sarah Wilson"],
     url: "https://conference-proceedings.com/paper-2",
     pdfUrl: "https://example.com/paper-2.pdf"
   },
@@ -42,7 +42,7 @@ const publications: Publication[] = [
     date: "August 2023",
     type: "Article",
     description: "A practical guide to designing and implementing microservices architecture using Node.js and modern DevOps practices.",
-    authors: ["John Doe"],
+    authors: ["Dhruv Shridhar"],
     url: "https://techblog.com/microservices-nodejs"
   },
   {
@@ -51,7 +51,7 @@ const publications: Publication[] = [
     date: "June 2023",
     type: "Technical Article",
     description: "Comprehensive strategies for optimizing React application performance, including code splitting, memoization, and lazy loading.",
-    authors: ["John Doe"],
+    authors: ["Dhruv Shridhar"],
     url: "https://dev-digest.com/react-performance"
   },
   {
@@ -60,7 +60,7 @@ const publications: Publication[] = [
     date: "March 2023",
     type: "Opinion Paper",
     description: "An analysis of emerging trends in frontend development and predictions for the future of web technologies.",
-    authors: ["John Doe", "Tech Industry Panel"],
+    authors: ["Dhruv Shridhar", "Tech Industry Panel"],
     url: "https://web-dev-quarterly.com/future-frontend"
   }
 ];
