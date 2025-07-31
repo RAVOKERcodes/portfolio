@@ -75,7 +75,7 @@ export const ExperienceSection = () => {
               >
                 {/* Timeline dot */}
                 <div className="absolute left-4 lg:left-1/2 transform lg:-translate-x-1/2 -translate-y-2">
-                  <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-glow animate-pulse-glow" />
+                  <div className="w-4 h-4 bg-primary rounded-full border-4 border-background shadow-glow animate-pulse-glow hover:scale-110 transition-all" />
                 </div>
 
                 {/* Content */}

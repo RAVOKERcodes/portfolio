@@ -15,23 +15,23 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "E-Commerce Platform",
-    description: "• Modern e-commerce platform with React and Node.js\n• Real-time inventory management system\n• Integrated payment processing with Stripe\n• Comprehensive admin dashboard\n• AWS cloud deployment",
+    title: "Raste",
+    description: "• Internal navigation for hospitals, universities, airports, or other institutions, theapp provides seamless access to essential locations, such as wards, exam halls,or boarding gates, streamlining operations and enhancing user experience.\n• Raste solves real world problem of inside navigation by providing GPSprecision upto 6 decimal points.\n• Raste was able to gain funding of 1,40,000 INR.",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS"],
-    githubUrl: "https://github.com/johndoe/ecommerce-platform",
-    liveUrl: "https://ecommerce-demo.com",
-    stars: 124,
+    technologies: ["Geolocation", "Javascript", "Android studio", "Java", "XML", "SASS"],
+    githubUrl: "https://github.com/RAVOKERcodes/raste_prototype",
+    liveUrl: "https://github.com/RAVOKERcodes/raste_prototype",
+    stars: 5,
     featured: true
   },
   {
-    title: "Task Management App",
-    description: "• Collaborative task management with real-time updates\n• Drag-and-drop functionality for task organization\n• Team collaboration and communication features\n• Progress tracking and analytics",
+    title: "Codebro - Modern Web Browser",
+    description: "• Electron-based web browser with advanced features, focusing on privacy, performance, and user experience.\n• Built-in VPN, System monitoring (RAM usage, Battery status, Network speed tracking), Customizable sidebar shortcuts.",
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop",
-    technologies: ["React", "TypeScript", "Firebase", "Material-UI"],
-    githubUrl: "https://github.com/johndoe/task-manager",
-    liveUrl: "https://taskmanager-demo.com",
-    stars: 87
+    technologies: ["Node.js", "Electron", "Vanilla JavaScript", "AI", "HTML5", "CSS3", "Tailwind CSS"],
+    githubUrl: "https://github.com/RAVOKERcodes/custom-browser",
+    liveUrl: "https://github.com/RAVOKERcodes/custom-browser",
+    stars: 9
   },
   {
     title: "Weather Dashboard",
