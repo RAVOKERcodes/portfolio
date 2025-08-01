@@ -85,7 +85,7 @@ with a passion for innovation to enhance existing technology.
                 size="lg" 
                 className="bg-card/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground hover-lift border-primary/20"
                 onClick={() => {
-                  window.open(new URL("../assets/Dhruv-Shridhar-Resume.pdf", import.meta.url).href,);
+                  window.open(new URL("../assets/Dhruv-Shridhar-resume.pdf", import.meta.url).href);
                 }}
               >
                 <Download className="w-5 h-5 mr-2" />
