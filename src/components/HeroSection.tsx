@@ -86,7 +86,7 @@ with a passion for innovation to enhance existing technology.
                 className="bg-card/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground hover-lift border-primary/20"
                 onClick={() => {
                   // Replace with actual resume link
-                  window.open('/resume.pdf', '_blank');
+                  window.open('https://github.com/RAVOKERcodes/portfolio/blob/main/src/assets/Dhruv-Shridhar-resume.pdf');
                 }}
               >
                 <Download className="w-5 h-5 mr-2" />
