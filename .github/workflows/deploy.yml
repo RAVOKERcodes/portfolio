@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          VITE_BASE: /
+          VITE_BASE: /portfolio
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
