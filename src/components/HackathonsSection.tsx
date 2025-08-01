@@ -14,41 +14,42 @@ interface Hackathon {
 
 const hackathons: Hackathon[] = [
   {
-    name: "AI Healthcare Assistant",
-    event: "TechCrunch Disrupt Hackathon 2023",
-    date: "October 2023",
+    name: "Inno Pitch Expo",
+    event: "Chitkara University",
+    date: "April 2024",
     position: "1st Place Winner",
-    description: "Developed an AI-powered healthcare assistant that helps patients track symptoms and provides preliminary health insights using machine learning.",
-    technologies: ["Python", "TensorFlow", "React", "Flask", "OpenAI API"],
-    teamSize: 4,
+    description: "Internal navigation for hospitals, universities, airports, or other institutions, theapp provides seamless access to essential locations, such as wards, exam halls,or boarding gates, streamlining operations and enhancing user experience. Raste solves real world problem of inside navigation by providing GPSprecision upto 6 decimal points. Raste was able to gain funding of 1,40,000 INR.",
+    technologies: ["Geolocation", "Javascript", "Android studio", "Java", "XML", "SASS"],
+    teamSize: 3,
     award: "Best Innovation Award"
   },
   {
-    name: "EcoTrack",
-    event: "Climate Change Hackathon 2023",
-    date: "September 2023",
+    name: "Codathon: Igniting Innovation Ideas Through Code!",
+    event: "Chitkara University",
+    date: "April 2024",
     position: "2nd Place",
-    description: "Built a carbon footprint tracking application with gamification elements to encourage sustainable living habits among users.",
-    technologies: ["React Native", "Node.js", "MongoDB", "Chart.js"],
+    description: "Crafting a website from a Figma design was both challenging and rewarding. This experience has reinforced my belief in perseverance and the power of innovation. Grateful for the opportunity and eager to keep pushing the boundaries!",
+    technologies: ["React", "Node.js", "MongoDB", "express.js", "Tailwind CSS"],
     teamSize: 3,
-    award: "People's Choice Award"
+    award: "Runner Up"
   },
   {
-    name: "Smart City Dashboard",
-    event: "Government Innovation Challenge",
-    date: "June 2023",
-    position: "3rd Place",
-    description: "Created a real-time dashboard for city officials to monitor traffic, air quality, and public transport efficiency using IoT data.",
-    technologies: ["Vue.js", "D3.js", "Express.js", "PostgreSQL", "IoT Sensors"],
-    teamSize: 5
+    name: "Flipkard Grid 6.0",
+    event: "Flipkart",
+    date: "October 2024",
+    position: "201 AIR",
+    description: "flagship engineering campus challenge, recognised as India's largest Tech Case Competition. Curated for the best and the brightest engineering students across India, GRiD's legacy has been about more than just a competition - it's where talent meets innovation and entrepreneurship.",
+    technologies: ["PostgreSQL", "IoT Sensors", "React", "Java", "AI"],
+    teamSize: 3,
+    award: "Gift Cards"
   },
   {
-    name: "FinTech Security Suite",
-    event: "Blockchain & Security Hackathon",
-    date: "March 2023",
+    name: "Capture The Flag (CTF)",
+    event: "HackerSprey",
+    date: "March 2025",
     position: "Finalist",
-    description: "Developed a comprehensive security suite for financial applications with blockchain-based transaction verification.",
-    technologies: ["Solidity", "Web3.js", "React", "Node.js", "Ethereum"],
+    description: "HackerSprey CTF was a thrilling competition that tested our skills in penetration testing, web3, and Burp Suite. We were able to secure a finalist position and gain valuable experience in ethical hacking and cybersecurity.",
+    technologies: ["Penetration Testing", "Web3", "JS", "Burp Suite"],
     teamSize: 2
   }
 ];
@@ -64,6 +65,25 @@ export const HackathonsSection = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Achievements and innovations from competitive programming events
           </p>
+        </div>
+
+        {/* Statistics */}
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
+          {[
+            { label: "Hackathons Participated", value: "10+" },
+            { label: "Awards Won", value: "4" },
+            { label: "Projects Built", value: "25+" }
+            // { label: "Team Collaborations", value: "40+" }
+          ].map((stat, index) => (
+            <div key={index} className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+                {stat.value}
+              </div>
+              <div className="text-muted-foreground">
+                {stat.label}
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -124,13 +144,13 @@ export const HackathonsSection = () => {
           ))}
         </div>
 
-        {/* Statistics */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+        {/* Statistics
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-8">
           {[
-            { label: "Hackathons Participated", value: "15+" },
-            { label: "Awards Won", value: "8" },
-            { label: "Projects Built", value: "25+" },
-            { label: "Team Collaborations", value: "40+" }
+            { label: "Hackathons Participated", value: "10+" },
+            { label: "Awards Won", value: "4" },
+            { label: "Projects Built", value: "25+" }
+            // { label: "Team Collaborations", value: "40+" }
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
@@ -141,7 +161,7 @@ export const HackathonsSection = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

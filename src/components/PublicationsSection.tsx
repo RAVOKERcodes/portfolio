@@ -9,6 +9,7 @@ interface Publication {
   type: string;
   description: string;
   authors: string[];
+  corresponding_authors: string[];
   url?: string;
   pdfUrl?: string;
   featured?: boolean;
@@ -16,52 +17,15 @@ interface Publication {
 
 const publications: Publication[] = [
   {
-    title: "Modern Web Development Patterns: A Comprehensive Study of React and TypeScript Integration",
+    title: "Development of Intra-organisation Navigation System - RASTE",
     venue: "Journal of Software Engineering",
     date: "December 2023",
     type: "Research Paper",
-    description: "An in-depth analysis of modern web development patterns, focusing on the integration of React and TypeScript for building scalable applications.",
-    authors: ["Dhruv Shridhar", "Jane Smith", "Prof. Michael Johnson"],
-    url: "https://example-journal.com/paper-1",
-    pdfUrl: "https://example.com/paper-1.pdf",
-    featured: true
-  },
-  {
-    title: "Machine Learning Applications in Web Development",
-    venue: "International Conference on AI & Web Technologies",
-    date: "September 2023",
-    type: "Conference Paper",
-    description: "Exploring the intersection of machine learning and web development, with practical implementations and case studies.",
-    authors: ["Dhruv Shridhar", "Dr. Sarah Wilson"],
-    url: "https://conference-proceedings.com/paper-2",
-    pdfUrl: "https://example.com/paper-2.pdf"
-  },
-  {
-    title: "Building Scalable Microservices with Node.js",
-    venue: "TechBlog Weekly",
-    date: "August 2023",
-    type: "Article",
-    description: "A practical guide to designing and implementing microservices architecture using Node.js and modern DevOps practices.",
+    description: "Locating the assigned examination hall within the campus in stipulated time during exams becomes bothersome for both student and faculty. Present study proposes a Route Assist System (RASTE), a digital solution, to provide a comprehensive solution to users in locating desired destination in an effective manner. The application is tested for multiple testcases and has provided 93% performance accuracy and 100% satisfaction in accessibility and best practices.",
     authors: ["Dhruv Shridhar"],
-    url: "https://techblog.com/microservices-nodejs"
-  },
-  {
-    title: "Performance Optimization Techniques for React Applications",
-    venue: "Developer's Digest",
-    date: "June 2023",
-    type: "Technical Article",
-    description: "Comprehensive strategies for optimizing React application performance, including code splitting, memoization, and lazy loading.",
-    authors: ["Dhruv Shridhar"],
-    url: "https://dev-digest.com/react-performance"
-  },
-  {
-    title: "The Future of Frontend Development: Trends and Predictions",
-    venue: "Web Development Quarterly",
-    date: "March 2023",
-    type: "Opinion Paper",
-    description: "An analysis of emerging trends in frontend development and predictions for the future of web technologies.",
-    authors: ["Dhruv Shridhar", "Tech Industry Panel"],
-    url: "https://web-dev-quarterly.com/future-frontend"
+    corresponding_authors: ["Nishu Bali","Neelam Rani","Aniket", "Anurag", "Aditya"],
+    pdfUrl: new URL("../assets/PaperID36_ Revised.pdf", import.meta.url).href,
+    // featured: true
   }
 ];
 
@@ -144,6 +108,12 @@ export const PublicationsSection = () => {
                             {publication.authors.join(', ')}
                           </span>
                         </div>
+                        <div className="mb-6">
+                          <span className="text-sm text-muted-foreground">Corresponding Author: </span>
+                          <span className="text-foreground">
+                            {publication.corresponding_authors.join(', ')}
+                          </span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -162,7 +132,7 @@ export const PublicationsSection = () => {
                     {publication.pdfUrl && (
                       <Button
                         className="bg-gradient-primary hover:shadow-elegant text-primary-foreground"
-                        onClick={() => window.open(publication.pdfUrl, '_blank')}
+                        onClick={() => window.open(publication.pdfUrl)}
                       >
                         <Download className="w-4 h-4 mr-2" />
                         Download PDF
@@ -175,13 +145,28 @@ export const PublicationsSection = () => {
           ))}
         </div>
 
-        {/* Publication Stats */}
+        {/* Publication Stats
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { label: "Publications", value: "12+" },
             { label: "Citations", value: "150+" },
             { label: "Research Areas", value: "5" },
             { label: "Conferences", value: "8" }
+          ].map((stat, index) => (
+            <div key={index} className="text-center">
+              <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">
+                {stat.value}
+              </div>
+              <div className="text-muted-foreground">
+                {stat.label}
+              </div>
+            </div>
+          ))}
+        </div> */}
+
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-1 gap-8">
+          {[
+            { label: "Made By Dhruv Shridhar", value: "12+ Coffee Breaks" },
           ].map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-3xl lg:text-4xl font-bold text-primary mb-2">

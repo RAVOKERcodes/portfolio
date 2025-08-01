@@ -121,7 +121,7 @@ export const SkillsSection = () => {
         </div>
 
         {/* Skill Level Indicators */}
-        <div className="mt-16">
+        {/* <div className="mt-16">
           <h3 className="text-2xl font-bold mb-8 text-center text-foreground">
             Proficiency Levels
           </h3>
@@ -158,7 +158,7 @@ export const SkillsSection = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
