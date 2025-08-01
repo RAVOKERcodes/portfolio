@@ -18,8 +18,8 @@ interface Publication {
 const publications: Publication[] = [
   {
     title: "Development of Intra-organisation Navigation System - RASTE",
-    venue: "Journal of Software Engineering",
-    date: "December 2023",
+    venue: "3rd International Conference on Applied Data Science and Smart Systems.",
+    date: "January 2025",
     type: "Research Paper",
     description: "Locating the assigned examination hall within the campus in stipulated time during exams becomes bothersome for both student and faculty. Present study proposes a Route Assist System (RASTE), a digital solution, to provide a comprehensive solution to users in locating desired destination in an effective manner. The application is tested for multiple testcases and has provided 93% performance accuracy and 100% satisfaction in accessibility and best practices.",
     authors: ["Dhruv Shridhar"],

@@ -1,5 +1,6 @@
-import { Code, Database, Smartphone, Cloud, Palette, Zap } from "lucide-react";
+import { Code, Database, Smartphone, Cloud, Palette, Zap, Terminal } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Agent } from "http";
 
 interface SkillCategory {
   icon: React.ComponentType<{ className?: string }>;
@@ -12,50 +13,49 @@ const skillCategories: SkillCategory[] = [
   {
     icon: Code,
     title: "Frontend Development",
-    skills: ["React", "TypeScript", "Next.js", "Vue.js", "HTML5", "CSS3", "Tailwind CSS", "SASS"],
+    skills: ["React", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "SASS"],
     color: "text-blue-400"
   },
   {
     icon: Database,
     title: "Backend Development",
-    skills: ["Node.js", "Python", "Express.js", "FastAPI", "GraphQL", "REST APIs", "Microservices"],
+    skills: ["Node.js", "Python", "Express.js", "FastAPI", "Java", "REST APIs", "Microservices"],
     color: "text-green-400"
   },
   {
     icon: Database,
     title: "Database & Storage",
-    skills: ["PostgreSQL", "MongoDB", "Redis", "Firebase", "Supabase", "AWS S3", "MySQL"],
+    skills: ["PostgreSQL", "MongoDB", "Firebase", "Supabase", "AWS S3", "MySQL"],
     color: "text-purple-400"
   },
   {
     icon: Cloud,
     title: "Cloud & DevOps",
-    skills: ["AWS", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Vercel", "Nginx"],
+    skills: ["AWS", "Docker", "CI/CD", "GitHub Actions", "Gitlab CI", "Nginx"],
     color: "text-orange-400"
   },
   {
-    icon: Smartphone,
-    title: "Mobile Development",
-    skills: ["React Native", "Flutter", "Expo", "iOS", "Android", "PWA", "Responsive Design"],
+    icon: Terminal,
+    title: "Cybersecurity",
+    skills: ["Burp Suite", "Penetration Testing", "Web Security", "Nmap", "Ubuntu", "StromBreaker", "Networking"],
     color: "text-pink-400"
   },
   {
-    icon: Palette,
-    title: "Design & UX",
-    skills: ["Figma", "Adobe XD", "Photoshop", "UI/UX Design", "Wireframing", "Prototyping"],
+    icon: Cloud,
+    title: "Salesforce",
+    skills: ["Salesforce JavaScript developer 1", "Salesforce Integration Cloud", "Agent Cloud", "Apex"],
     color: "text-cyan-400"
   }
 ];
 
 const additionalSkills = [
   "Git & Version Control",
+  "Agentic AI",
+  "LLM",
   "Agile & Scrum",
   "Test Driven Development",
   "Performance Optimization",
-  "Web Security",
   "Machine Learning Basics",
-  "Blockchain Development",
-  "Team Leadership"
 ];
 
 export const SkillsSection = () => {
