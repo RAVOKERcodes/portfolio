@@ -68,7 +68,7 @@ const projects: Project[] = [
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop",
     technologies: ["Node.js", "Express.js", "PostgreSQL", "Salesforce", "Sequelize ORM", "React", "Redux", "AI", "Salesforce"],
     githubUrl: "https://github.com/RAVOKERcodes",
-    liveUrl: "testperformo.prismberry.com",
+    liveUrl: "https://testperformo.prismberry.com",
     stars: 1
   }
 ];
