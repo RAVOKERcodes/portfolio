@@ -57,7 +57,7 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:w-lg bg-gradient-card border-primary/20 animate-scale-in flex flex-col items-center">
+      <DialogContent className="sm:w-lg md:w-xl lg:w-2xl bg-gradient-card border-primary/20 animate-scale-in flex flex-col items-center">
         <DialogHeader className="text-center">
           <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             Get In Touch
