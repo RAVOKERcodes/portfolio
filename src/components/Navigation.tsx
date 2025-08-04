@@ -93,7 +93,7 @@ export const Navigation = ({ onContactClick }: NavigationProps) => {
 
         {/* Mobile Menu */}
         <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          isMobileMenuOpen ? "max-h-97 opacity-100" : "max-h-0 opacity-0"
         }`}>
           <div className="bg-background/95 backdrop-blur-md border-t border-primary/20 px-6 py-4">
             <div className="flex flex-col space-y-4">
