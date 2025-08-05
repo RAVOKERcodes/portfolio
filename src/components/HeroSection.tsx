@@ -63,7 +63,7 @@ with a passion for innovation to enhance existing technology.
                 variant="outline" 
                 size="lg" 
                 className="bg-card/50 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground hover-lift border-primary/20"
-                onClick={() => window.open('mailto:shridhardhruv123@gmail.com', '_blank')}
+                onClick={() => window.open('mailto:dhruvshridhar.dev@gmail.com', '_blank')}
               >
                 <Mail className="w-5 h-5 mr-2" />
                 Email

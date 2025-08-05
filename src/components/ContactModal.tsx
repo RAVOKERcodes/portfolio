@@ -17,8 +17,8 @@ export const ContactModal = ({ open, onOpenChange }: ContactModalProps) => {
     {
       icon: Mail,
       label: "Email",
-      value: "shridhardhruv123@gmail.com",
-      action: () => window.location.href = 'mailto:shridhardhruv123@gmail.com',
+      value: "dhruvshridhar.dev@gmail.com",
+      action: () => window.location.href = 'mailto:dhruvshridhar.dev@gmail.com',
       actionLabel: "Send Email"
     },
     {
